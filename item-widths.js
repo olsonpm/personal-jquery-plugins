@@ -51,6 +51,7 @@ function init($) {
             var childrenOfSelector = $(this).children();
             if (childrenOfSelector.length === numChildren) {
                 childrenOfSelector.each(function(i) {
+                    $(this).css('display', 'inline-block');
                     widths2d[i].push(parseFloat($(this).css('width')));
                 });
             }
@@ -67,7 +68,6 @@ function init($) {
             if (childrenOfSelector.length === numChildren) {
                 for (var i = 0; i < numChildren; i++) {
                     childrenOfSelector.eq(i).css('width', maxWidths[i] + 'px');
-                    childrenOfSelector.eq(i).css('display', 'inline-block');
                 }
             }
         });
