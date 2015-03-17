@@ -67,6 +67,7 @@ function init($) {
             if (childrenOfSelector.length === numChildren) {
                 for (var i = 0; i < numChildren; i++) {
                     childrenOfSelector.eq(i).css('width', maxWidths[i] + 'px');
+                    childrenOfSelector.eq(i).css('display', 'inline-block');
                 }
             }
         });
