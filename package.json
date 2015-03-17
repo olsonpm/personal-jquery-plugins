@@ -1,0 +1,19 @@
+{
+  "name": "personal-jquery-plugins",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/olsonpm/personal-jquery-plugins.git"
+  },
+  "author": "Phil Olson <philip.olson@protonmail.ch> (https://github.com/olsonpm)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/olsonpm/personal-jquery-plugins/issues"
+  },
+  "homepage": "https://github.com/olsonpm/personal-jquery-plugins"
+}
