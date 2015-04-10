@@ -67,7 +67,9 @@ function init($) {
             var childrenOfSelector = $(this).children();
             if (childrenOfSelector.length === numChildren) {
                 for (var i = 0; i < numChildren; i++) {
-                    childrenOfSelector.eq(i).css('width', maxWidths[i] + 'px');
+                    // adding 1 px due to odd bug where setting the div's width to 103px caused the text to wrap,
+                    //   but setting it to auto (where size was reported as 103) caused the div to behave just fine.
+                    childrenOfSelector.eq(i).css('width', (maxWidths[i] + 1) + 'px');
                 }
             }
         });
